@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+
+    <record id="1_medico" model="hospital.medicos">
+        <field name="name">Pepe Doctorus</field>
+        <field name="last_name">Hermitañez</field>
+        <field name="num_cole">12</field>
+    </record>
+
+    <record id="1_paciente" model="hospital.pacientes">
+        <field name="name">Roberts</field>
+        <field name="last_name">Miguelez</field>
+        <field name="sintomas">Dolor de estomago</field>
+    </record>
+
+    <record id="id3" model="hospital.diagnosticos">
+        <field name="medico_id" ref="1_medico"/>
+        <field name="paciente_id" ref="1_paciente"/>
+        <field name="diagnostico">Dolor por comer demasiadas golosinas</field>
+    </record>
+
+    </data>
+</odoo>
